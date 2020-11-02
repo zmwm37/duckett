@@ -1,0 +1,183 @@
+<html>
+  <head>
+    <title> Chapter 2 Practice </title>
+  <head>
+
+  <body>
+
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+
+    <p>Writing a paragraph is pretty easy too.
+    You can make words <b>bold</b> or <i>italic</i>.
+    Subcripts, like r<sub>0</sub>, and superscripts,
+     like r<sup>2</sup> can also be readily added
+    </p>
+
+    <p>In this paragraph we'll look at blockquotes.
+
+      <blockquote>The effect of the blockquote is to indent, although if
+         indenting is the only desired effect, use css insetead of blockquote.
+      </blockquote>
+
+      Easy peasy, lemon squeezy.
+    </p>
+
+    <h2> Lists </h2>
+    <p> Lists come in three types, ordered, unordered, and definition. </p>
+
+    <p> Ordered lists have numbers with them, like instructions.
+      <ol>
+        <li>Lather </li>
+        <li>Rinse </li>
+        <li>Repeat</li>
+      </ol>
+
+      In constrast, unordered lists can appear as bulleted lists:
+
+      <ul>
+        <li> one fish</li>
+        <li>two fish</li>
+        <li>red fish</li>
+        <li>blue fish</li>
+      </ul>
+
+      You can use attributes to sepcify type of bullet, but it's better to use
+      CSS formatting to accomplish this.
+
+      There are also definition lists and nested lists
+
+      <dl>
+        <dt>Definition list</dt>
+          <dd>A type of list with a structure useful for showing definitions.
+          The term is listed and left-adjusted, while the definition is indented
+          below it. Use <i>dt</i> tags for the term and <i>dd</i> tags for
+          the definition.</dd>
+        <dt>Nested list</dt>
+          <dd> Lists within lists, either ordered or unordered. (<i>No example shown </i>) </dd>
+      </dl>
+    </p>
+
+    <h2>Linking</h2>
+    <p>Linking uses the <i>a</i> tag and the "href" attribute to specify the link.
+      If a link it exerternal, then it needs an <b>absolute</b> URL, but if the
+      link is to the a different page of the same website, then a <b>relative</b>
+      URL will suffice.
+    </p>
+
+    <p>When organizing the directory, each main page of the website should have
+      its own dedicated folder. This helps with organization. The name of the main
+      page within each section should be index.html because this is what web browsers
+      will return by default if no webpage is specified.
+    </p>
+
+    <p>To link to parts of the same page, use the <i>id</i> attribute of the
+    element you want to link to, and put it in the href attribute of the link
+    </p>
+
+    <h2>Images</h2>
+    <p>Images can be from jpg, png, or gif files</p>
+
+    <ul>
+      <li>jpg: good for complex images with many colors</li>
+      <li>png: good for simple images with few colors</li>
+      <li>gif: similar to jpg, also can be a series of images to make simple animations</li>
+    </ul>
+
+    <p>Images have an "alt" attribute that should always be populated with good
+      description because it is used by web readers to describe pictures to
+      visually impaired.
+    </p>
+
+    <p>Images should be saved as the size that they will be on the webpage</p>
+
+    <h2>Tables</h2>
+    <p>Elements of a table
+      <ul>
+        <li>table: element to create a table</li>
+        <li>tr: indicates the start of a row</li>
+        <li>td: indicates a cell</li>
+        <li>th: used same as td, but indicates heading for row or column</li>
+      </ul>
+    </p>
+
+    <table>
+      <thead>
+        <tr>
+          <th></th>
+          <th scope = "col">Saturday</th>
+          <th scope = "col">Sunday</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope = "row">Tickets Solds</th>
+          <td>120</td>
+          <td>135</td>
+        </tr>
+        <tr>
+          <th scope = "row">Total Sales</th>
+          <td>$600</td>
+          <td>$675</td>
+
+        <tr>
+      </tbody>
+    </table>
+
+    <h2>Forms</h2>
+
+    <p>Several types of form controls
+      <ul>
+        <li>Adding text</li>
+        <li>Making Choices</li>
+        <li>Submitting Forms</li>
+      </ul>
+
+      Form controls live within a form element. Examples of form controls include:
+      <ul>
+        <li>action = URL for the page on the server that will receive the information
+          in the form when it is submitted </li>
+        <li>method = forms can be sent using two methods: get or post</li>
+        <li>id = unique id of element </li>
+        <li>size = deprecated, was used to indicate width. now use CSS </li>
+      </ul>
+
+      The input eleent is used to create several different form controls. Some examples:
+
+      <h3>Text</h3>
+      <input type="text" name ="textSample" maxlength = "30" />
+
+      <h3>Password</h3>
+      <input type = "password" name = "pwSample" maxlength="30" />
+
+      <h3>Text area</h3>
+      <textarea name = "comments" cols = "20" rows = "4"> ENter your comments here.
+      </textarea>
+
+      <h3>Radio Button</h3>
+      <p> Select favorite genre
+      <input type = "radio" name = "genre" value = "rock" checked = "checked" /> Rock
+      <input type = "radio" name = "genre" value = "jazz" /> Jazz
+      </p>
+
+      <h3>Dropdown</h3>
+      <p>What device do you want to listen to?</p>
+      <select name = "devices">
+        <option value = "ipod">iPod</option>
+        <option value = "radio">Radio</option>
+        <option value = "computer">Computer</option>
+      </select>
+
+      And many more.
+    </p>
+
+
+
+
+  </body>
+
+</html>
