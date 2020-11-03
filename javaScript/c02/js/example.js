@@ -14,7 +14,7 @@ var shipping = 7;
 var grandTotal = subTotal + shipping;
 
 // get element with id of 'greeting'and update
-var el = document getElementById('greeting')
+var el = document.getElementById('greeting');
 el.textContent = welcome;
 
 // get the element that has an id of 'userSign' and update
